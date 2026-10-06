@@ -30,7 +30,7 @@ Directories/folders are called repositories
 * Distributed (DVCS): Gives every user a complete local clone of the entire repository, including its full history. Developers can work offline, commit locally, and push or pull changes when connected. Examples include Git and Mercurial.
 
 ### Creating a git repo:
-* `git init` command to initialise git
+* `git init` command to initialise git in a directory
 * Touch to create a new file eg touch `.gitignore` (`mv` old new to rename) and (`rm` name to delete)
 * `.gitignore` file contains everything we do not want to add eg. *.ignore means any file that ends with .ignore will not be added
 
@@ -40,7 +40,9 @@ Directories/folders are called repositories
 * local repo: actual repository use command `git commit -m “”` (use `-a` to commit everything and skip add)
 * `git status`: shows status of the repo
 * `git diff` : shows the difference between working and latest commit
-* `Git log` : log of all things that have happened
+* `Git log` : log of all things that have happened (`--oneline, --graph, --all`)
+* `git reset`
+* `git show`: show detail of last commit or specify a commit
 
 ### Copying repo to remote:
 * `Git remote add origin url` to establish connection
@@ -56,18 +58,21 @@ Directories/folders are called repositories
 ### Branches
 * allow multiple people to work simultaneously without having to work serially - the different branches work in parrarell
   * **Main branch**: it is good practice to configure rules to the main branch such us require pull before merge, require approval before merges, require multiple approvals before merge 
-* Can create a branch through github settings
-* `git checkout -b branch name` to create and move to said branch
-* `git branch` to check what branch you are on
+* Can create a branch manually through github **or**
+* `git branch branch name` to create a new branch (`-D` to delete branch) 
+* Then `git checkout branch name`  to move to said branch or (`git switch` ) (add `-b` before branch name to create a new branch and skip using git branch)
+* just `git branch` to check what branch you are on 
 * Can also use checkout to go back to previous commits (use log to find commit name)
+
+
 ### Merging Branches
 * Pull requests are used when you are ready to merge a branch into another, these can be reviewed and approved and then finally merged.
-* Can also use the `git merge` command
-* Before merging a branch into main it is good practice first merge the main branch into the feature branch and resolve those merge conflicts and then open a pull request
+* Can also use the `git merge` command for local merges
+* Before merging a branch into main it is good practice to first merge the main branch into the feature branch and resolve any merge conflicts and then open a pull request
 
 #### Merge Conflicts
 - When there is conflicting changes to the same file so an automatic merge is not possible
-- When merge conflicts occur we must open the files with the conflict and edit the file so that ther is no longer a conflict and then push those changes
+- When merge conflicts occur we must open the files with the conflict and edit the file so that there is no longer a conflict and then push those changes
 - In a merge conflict `Head` is the changes from current branch and the rest is from the other branch
 - merge conflicts are easiest to solve locally
 - How to reduce merge conflicts:
