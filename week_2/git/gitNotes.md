@@ -10,6 +10,9 @@
       - [Syncing remote and local:](#syncing-remote-and-local)
   - [Collabertive Git](#collabertive-git)
     - [Branches](#branches)
+    - [Merging Branches](#merging-branches)
+      - [Merge Conflicts](#merge-conflicts)
+    - [Git reccomended Worflow](#git-reccomended-worflow)
 
 ### What is Version Control:
 * For anyone who creates content
@@ -52,5 +55,23 @@ Directories/folders are called repositories
 
 ### Branches
 * allow multiple people to work simultaneously without having to work serially - the different branches work in parrarell
+  * **Main branch**: it is good practice to configure rules to the main branch such us require pull before merge, require approval before merges, require multiple approvals before merge 
 * Can create a branch through github settings
-* git checkout -b branch name to create and move to said branch
+* `git checkout -b branch name` to create and move to said branch
+* `git branch` to check what branch you are on
+* Can also use checkout to go back to previous commits (use log to find commit name)
+### Merging Branches
+* Pull requests are used when you are ready to merge a branch into another, these can be reviewed and approved and then finally merged.
+* Can also use the `git merge` command
+* Before merging a branch into main it is good practice first merge the main branch into the feature branch and resolve those merge conflicts and then open a pull request
+
+#### Merge Conflicts
+- When there is conflicting changes to the same file so an automatic merge is not possible
+- When merge conflicts occur we must open the files with the conflict and edit the file so that ther is no longer a conflict and then push those changes
+- In a merge conflict `Head` is the changes from current branch and the rest is from the other branch
+- merge conflicts are easiest to solve locally
+- How to reduce merge conflicts:
+  - Good communication, have a standard process in the team, let your team know what files you are working on
+
+### Git reccomended Worflow
+[Git Collab Recommended Workflow (PDF)](Git%20Collab%20Recommended%20Workflow.pdf)
