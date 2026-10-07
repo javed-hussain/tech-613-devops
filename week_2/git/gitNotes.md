@@ -36,13 +36,18 @@ Directories/folders are called repositories
 
 ### Comitting to your local git repo:
 * Working directory: storage containing project files currently being worked on
-* Staging area: choose what files from working directory to add to repo - Uses command `git add (--all)` (git is an opt in system must specify what files are being added)
+* **Staging area**: allows you to choose what files from working directory to add to a commit - Uses command `git add (--all)` (git is an opt in system must specify what files are being added)
+* 
 * local repo: actual repository use command `git commit -m “”` (use `-a` to commit everything and skip add)
 * `git status`: shows status of the repo
 * `git diff` : shows the difference between working and latest commit
 * `Git log` : log of all things that have happened (`--oneline, --graph, --all`)
-* `git reset`
+* `git reset`: jumps branch back to a previous commit
+  * `--soft`: rewinds branch to prev commit but leaves file edits as are in staging area
+  * `--mixed`: rewinds the branch and empties staging area but changes stay in staging area
+  * `--hard`: rewinds branch and overwrites your files to match prev commit - deletes all changes up to that commit
 * `git show`: show detail of last commit or specify a commit
+* `git restore`: restores a file to its last comitted state or used to remove a file from the staging area (`--staged` tag)
 
 ### Copying repo to remote:
 * `Git remote add origin url` to establish connection
