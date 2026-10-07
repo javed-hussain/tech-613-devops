@@ -5,3 +5,4 @@
 ### Week 2:
 * [Git](week_2/git/gitNotes.md)
 * [Markdown](week_2/markdown/markdown_notes.md)
+* [Virtual Machines](week_2/VirtualMachine/VM_Notes.md)
