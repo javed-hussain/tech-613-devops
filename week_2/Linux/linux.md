@@ -1,6 +1,6 @@
 # Linux Notes
 
-## Why learn Linux?
+### Why learn Linux?
 
 - Lightweight and efficient
 - Free and open source
@@ -9,7 +9,7 @@
 - Scales from small devices such as Raspberry Pi to large data centres
 - Common in software development, cloud computing, and DevOps
 
-## What is Linux?
+### What is Linux?
 
 Linux is a Unix-like operating system.
 
@@ -18,7 +18,7 @@ Linux is a Unix-like operating system.
 - A complete Linux operating system also includes a shell, system utilities, libraries, and applications.
 - A packaged version of Linux is called a **distribution** or **distro** (example is ubuntu)
 
-## What is a shell?
+### What is a shell?
 
 A shell is a command-line program that lets a user interact with the operating system. It:
 
@@ -27,7 +27,7 @@ A shell is a command-line program that lets a user interact with the operating s
 - Shows output and errors
 - Allows automation using scripts
 
-## What is Bash?
+### What is Bash?
 
 **Bash** stands for **Bourne Again SHell**.
 
@@ -38,7 +38,7 @@ A shell is a command-line program that lets a user interact with the operating s
 
 
 
-## Linux terminal prompt
+### Linux terminal prompt
 
 Example:
 
@@ -53,7 +53,7 @@ ubuntu@ip-172-31-52-135:~$
 
 
 
-## Paths
+### Paths
 
 A path shows where a file or folder is stored.
 
@@ -67,21 +67,7 @@ A path shows where a file or folder is stored.
 | `~` | Current user's home directory |
 | `.` | Current directory |
 | `..` | Parent directory |
-a
 
 
-## SSH
 
-SSH means **Secure Shell**. It lets you securely access a remote Linux server.
 
-```bash
-ssh -i ~/.ssh/tech613-javed-aws-key.pem ubuntu@ec2-3-253-15-215.eu-west-1.compute.amazonaws.com
-```
-
-When connected, commands run on the remote Ubuntu server, not on the Mac.
-
-```bash
-exit
-```
-
-Ends the SSH connection and returns to the Mac Terminal.

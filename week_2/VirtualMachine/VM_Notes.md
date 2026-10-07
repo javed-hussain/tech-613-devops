@@ -20,7 +20,18 @@ It runs inside a physical computer but acts like its own completely separate sys
 * Launch an instance of EC2 on aws, name it and select the OS and instance type, select your key pair, configure network settings
 * connect to the VM in SSH client using the prompt given - ensure fingerprints etc matchup and press yes and this should establish connection
 * `ssh -i ~/.ssh/tech613-javed-aws-key.pem ubuntu@ec2-63-35-227-241.eu-west-1.compute.amazonaws.com`
+### SSH
 
-### Closing Virtual Machine
-* exit command to disconnect
-* instance state - stop to stop the instance running
+SSH means **Secure Shell**. It lets you securely access a remote Linux server.
+
+```bash
+ssh -i ~/.ssh/tech613-javed-aws-key.pem ubuntu@ec2-3-253-15-215.eu-west-1.compute.amazonaws.com
+```
+
+When connected, commands run on the remote Ubuntu server, not on the Mac.
+
+```bash
+exit
+```
+
+Ends the SSH connection and returns to the Mac Terminal.
