@@ -11,7 +11,7 @@
 | Output | Meaning |
 |---|---|
 | first char (`-`)|file type|
-| `rw-r--r--` | File type and permissions |
+| `rw-r--r--` | Permissions |
 | `1` | Number of hard links to the file |
 | First `ubuntu` | File owner |
 | Second `ubuntu` | Group owner |
@@ -19,13 +19,13 @@
 | `Oct 7 15:00` | Last modified date and time |
 | `notes.txt` | File name |
 
-3. What permissions are set when a user creates a file or directory? Who does the file or directory belong to?
+1. What permissions are set when a user creates a file or directory? Who does the file or directory belong to?
    * The user who creates a file or directory becomes its owner.
    * The file or directory normally belongs to the creator's primary group.
    * Systems have a `umask` which is a default permission filter, this removes permissions from new files and directories when they are created
    * `umask` command to see your current umask.
 
-4. Why does the owner, by default, not receive X permissions when they create a file?
+2. Why does the owner, by default, not receive X permissions when they create a file?
    * New files are usually text or data files, not programs.
    * Giving execute (`x`) permission automatically could allow unsafe files or scripts to run accidentally.
    * Execute permission can be added manually when needed

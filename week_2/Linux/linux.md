@@ -68,6 +68,7 @@ A path shows where a file or folder is stored.
 | `.` | Current directory |
 | `..` | Parent directory |
 
+* The root directory is the root of the entire file system, home directory conventially contains regular users personal directories, a users home directory eg ("ubuntu") is a specific users home directory which is represnted as ~
 
 
 
