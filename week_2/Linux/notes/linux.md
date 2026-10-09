@@ -1,4 +1,11 @@
 # Linux Notes
+- [Linux Notes](#linux-notes)
+    - [Why learn Linux?](#why-learn-linux)
+    - [What is Linux?](#what-is-linux)
+    - [What is a shell?](#what-is-a-shell)
+    - [What is Bash?](#what-is-bash)
+    - [Linux terminal prompt](#linux-terminal-prompt)
+    - [Paths](#paths)
 
 ### Why learn Linux?
 
@@ -61,12 +68,7 @@ A path shows where a file or folder is stored.
 /home/ubuntu/tech613
 ```
 
-| Symbol | Meaning |
-|---|---|
-| `/` | Root directory |
-| `~` | Current user's home directory |
-| `.` | Current directory |
-| `..` | Parent directory |
+
 
 * The root directory is the root of the entire file system, home directory conventially contains regular users personal directories, a users home directory eg ("ubuntu") is a specific users home directory which is represnted as ~
 

@@ -1,4 +1,10 @@
 # Linux File Management Research
+- [Linux File Management Research](#linux-file-management-research)
+  - [Task 1: Research managing file ownership](#task-1-research-managing-file-ownership)
+  - [Task 2: Managing File Permissions](#task-2-managing-file-permissions)
+  - [Task 3: Research Numeric File Permission Values](#task-3-research-numeric-file-permission-values)
+  - [Task 4: Research Changing File Permissions](#task-4-research-changing-file-permissions)
+      - [Syntax for permission changes](#syntax-for-permission-changes)
 
 ## Task 1: Research managing file ownership
 1. Why is managing file ownership important?

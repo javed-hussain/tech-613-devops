@@ -1,8 +1,7 @@
-# Tech613 Learning
+# Markdown
 Can create a content page using ctr shift p and the create table of contents - uses headings to build the table
 
-- [Tech613 Learning](#tech613-learning)
-  - [Markdown](#markdown)
+- [Markdown](#markdown)
     - [Headings](#headings)
     - [Lists](#lists)
     - [Text formating](#text-formating)
@@ -13,7 +12,6 @@ Can create a content page using ctr shift p and the create table of contents - u
     - [Math](#math)
 
 
-## Markdown
 
 ### Headings
 
