@@ -15,3 +15,5 @@ sudo apt-get install nginx -y
 sudo systemctl restart nginx
 #enable nginx adds nginx to the startup
 sudo systemctl enable nginx
+
+#to execute a script use command ./script.sh

@@ -75,8 +75,28 @@ Ubuntu uses `apt` to manage software packages.
 `sudo apt upgrade`: downloads and installs the newer versions of installed packages
 apt update checks for new versions; apt upgrade actually installs the newer versions of software you already have
 
+#### echo
+
+* `echo` is a command that prints to the screen
+* `$` means use the value inside this variable (paramter expansion)
 #### Tree
 
 * this package displays file structure in a tree format
 * `sudo apt-get install tree`
 * and then the command tree shows the files
+
+## Enviroment Variables
+
+* An Enviroment Variable is a named setting stores as a `NAME=value` pair that the shell and programe can read. They typically provide information or configurations that linux will use
+* This differs to regular vars, as only the current terminal/bash sessions knows it wheras envirovars is information available to the terminal and programs and scripts it starts
+* can print all env vars values with print env or specify printenv variables
+* can write a new var simply with VARNAME = Content
+* To write a env var we `export VARNAME=content` for it to become an enviromental var
+
+### Enviroment Variable Persistance
+* when you end a bash session the enviroment variables will be wiped they do not persist
+* If we want environment vars to persist then we must set up a config file and set up the envvars in that file - This is the .bashrc
+  * the .bashrc file loads up everytime that user logs in
+  * `source .bashrc` command will reload that file
+  * we write the envvars in said file `export VAR=content`
+  * Now whenever we log in that bashrc file is reload and the envirovars are set.

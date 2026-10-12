@@ -6,6 +6,9 @@
     - [What is Bash?](#what-is-bash)
     - [Linux terminal prompt](#linux-terminal-prompt)
     - [Paths](#paths)
+  - [Processes:](#processes)
+      - [`top`](#top)
+      - [Parent and child processes](#parent-and-child-processes)
 
 ### Why learn Linux?
 

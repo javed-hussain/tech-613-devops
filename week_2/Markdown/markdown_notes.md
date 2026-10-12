@@ -56,9 +56,8 @@ And now back to [the first link][another place].
 
 #### Images
 Works the same as links but with an ! before the []
-![link](Images/Link.jpeg)
+![link](../../Images/Link.jpeg)
 (can drag an image into text editer using shift)
-
 ### Coded Blocks
 
 We can write coded blocks of text using ```javascript```
