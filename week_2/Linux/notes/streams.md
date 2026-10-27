@@ -31,8 +31,8 @@
 
 ### Redirecting and Appending
 
-1. What does > do?
-* This is the redirect command - redirects a stream to a specified file
+1. What does `>` do?
+   * This is the redirect command - redirects a stream to a specified file
 
-2. How is appending different?
-* Redirect will redirect data to a file, this overwrites the content of said file with the stream (deletes old content replaces with new stream) however appending `>>` adds the stream to the end of a file, doesnt delete the content of the file at all
+2. How is appending (`>>`) different?
+   * Redirect will redirect data to a file, this overwrites the content of said file with the stream (deletes old content replaces with new stream) however appending `>>` adds the stream to the end of a file, doesnt delete the content of the file at all

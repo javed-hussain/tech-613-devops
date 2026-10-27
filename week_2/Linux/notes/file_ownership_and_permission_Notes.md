@@ -88,4 +88,5 @@ Example output: `-rwxr-xr-- 1 tcboony staff  123 Nov 25 18:36 keeprunning.sh`
 * a = all , u = owner/user, g = group, o = other, r = read, w = write, x = execute
 * a+r : add r permission to all (`chmod a+r filename`)
 * o-x: remove execute permission from others
-* Or we specify the numeric value for each user type permission 
+* Can also do g = rw or o= (others no premissions) etc if you want to explicity specify
+* Or we specify the numeric value for each user type permission (eg, chmod 664 filename)

@@ -3,21 +3,20 @@
     - [Why learn Linux?](#why-learn-linux)
     - [What is Linux?](#what-is-linux)
     - [What is a shell?](#what-is-a-shell)
+    - [SSH](#ssh)
     - [What is Bash?](#what-is-bash)
     - [Linux terminal prompt](#linux-terminal-prompt)
     - [Paths](#paths)
-  - [Processes:](#processes)
-      - [`top`](#top)
-      - [Parent and child processes](#parent-and-child-processes)
 
 ### Why learn Linux?
 
-- Lightweight and efficient
+- Lightweight and efficient - doesnt require lots of processing powers
 - Free and open source
 - Stable and reliable for long-running systems
 - Used on desktops, servers, cloud platforms, embedded devices, and supercomputers
 - Scales from small devices such as Raspberry Pi to large data centres
 - Common in software development, cloud computing, and DevOps
+- doesnt force updates - very stable
 
 ### What is Linux?
 
@@ -36,6 +35,10 @@ A shell is a command-line program that lets a user interact with the operating s
 - Runs programs
 - Shows output and errors
 - Allows automation using scripts
+
+### SSH
+
+SSH means **Secure Shell**. It lets you securely access a remote Linux server / remote shell via the internet through encryption. public and private key pair.
 
 ### What is Bash?
 

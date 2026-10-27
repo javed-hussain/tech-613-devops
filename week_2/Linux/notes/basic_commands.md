@@ -27,6 +27,8 @@
 |`nl filename` |returns numbered lines of a file|
 |`cat filename` |returns content of a file|
 |`cat filename \| grep word` |searches for and returns instances of word in filename|
+|`command 1 && command 2`|means and then, only if prev xommand success|
+| `command 1 \|\| command 2` | only run if prev command failed |
 
 
 ## Sudo
