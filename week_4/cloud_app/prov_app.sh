@@ -39,7 +39,7 @@ if [ -f nodejs20-sparta-tictactoe-v1.zip ]; then
 
     # Configure PM2 to start automatically when the EC2 instance boots,
     # using systemd for the root user whose home directory is /root
-    pm2 startup systemd -u root --hp /root
+    pm2 startup systemd -u ubuntu --hp /home/ubuntu
     
     # Save the current PM2 process list (e.g. tictactoe) so PM2 restores
     # the app automatically after a reboot
