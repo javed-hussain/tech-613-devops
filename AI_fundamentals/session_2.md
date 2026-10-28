@@ -161,34 +161,3 @@ Inference parameters, also called generation parameters, control how an LLM sele
 | Enterprise data | Lets the model use internal company documents  |
 | Hallucinations | Makes invented answers less likely because the model is supplied with evidence  |
 
-## Likely assessment questions
-
-### What is an LLM?
-An LLM is a specialised neural network trained on large text datasets to understand and generate human language 
-
-### Do LLMs retrieve stored facts?
-No They predict likely responses using statistical patterns learned during training 
-
-### What is tokenisation?
-Tokenisation splits input text into tokens, such as words, parts of words, or punctuation, so the model can process it 
-
-### What is embedding?
-Embedding converts each token into a numerical vector representation 
-
-### What does a transformer do?
-A transformer uses attention and context mixing across multiple layers to understand the prompt and predict likely next tokens 
-
-### What is greedy decoding?
-Greedy decoding selects the highest-probability next token at each step 
-
-### What does temperature control?
-Temperature controls randomness: low temperature gives more consistent factual output, while high temperature gives more varied creative output 
-
-### What is the difference between Top-K and Top-P?
-Top-K keeps a fixed number of the most likely tokens; Top-P keeps tokens until their cumulative probability reaches a chosen threshold 
-
-### What is a hallucination?
-A hallucination is a false or invented claim produced by an AI model 
-
-### What is RAG and why is it useful?
-RAG retrieves relevant external information, adds it to the prompt context, and uses it to generate a better-supported answer It helps with knowledge cutoffs, private company data, and hallucinations 
