@@ -12,3 +12,21 @@
   * [File ownership and permission notes](week_2/Linux/notes/file_ownership_and_permission_Notes.md)
   * [Streams](week_2/Linux/notes/streams.md)
   * [Processes](week_2/Linux/notes/processes.md)
+
+### Week 3
+
+
+### Week 4
+* [cloud concepts](week_4/cloud_app/cloud_concepts.md)
+* [Deploying app to cloud](week_4/cloud_app/deploying_app_aws.md)
+* [proxies](week_4/cloud_app/proxies.md)
+* [app architectures](week_4/cloud_app/app_architectures.md)
+* MongoDB
+  * [MongoDB theory](week_4/Mongo_DB/Mongo_DB.md)
+  * [Deploying Mongo DB](week_4/Mongo_DB/deploy_mongo.md)
+  * []()
+
+### Scripts
+* [Provision nginx](week_2/Linux/scripts/install-prov-nginx.sh)
+* [deploy node app](week_4/cloud_app/prov_app.sh)
+* [Deploy MongoDB](week_4/Mongo_DB/deploy_db.sh)
