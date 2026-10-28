@@ -27,6 +27,9 @@ cd tictactoe-deploy
 if [ -f nodejs20-sparta-tictactoe-v1.zip ]; then
     unzip -o nodejs20-sparta-tictactoe-v1.zip
     cd app
+    pm2 kill
+    export MONGODB_URI=mongodb://DB-PUBLIC-IP-ADDRESS:27017/tictactoe
+    
     npm install
 
     # Remove any existing tictactoe web-apps  process 

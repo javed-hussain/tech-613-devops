@@ -25,7 +25,7 @@
 | arch=amd64,arm64            | Supports Intel/AMD and ARM CPUs                      |
 | signed-by=...               | Uses the MongoDB key to verify packages              |
 | noble                       | Ubuntu 24.04’s codename                              |
-| mongodb-org/8.0             | MongoDB 8.0 official repository                      |
+| mongodb-org/7.0             | MongoDB 7.0 official repository                      |
 | tee                         | Writes the text into a file                          |
 | /etc/apt/sources.list.d/... | Where Ubuntu stores extra package repositories       |
 
