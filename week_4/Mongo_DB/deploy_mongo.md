@@ -59,4 +59,6 @@ sudo apt install -y mongodb-org`
 
 - set the mongodb uri as an evironment variable:    
   - `export MONGODB_URI=mongodb://DB-PUBLIC-IP-ADDRESS:27017/tictactoe`
+  - kill the process
   - run npm install - simply connect to said db by specifying the url above
+  - start the process again

@@ -24,7 +24,13 @@
 * MongoDB
   * [MongoDB theory](week_4/Mongo_DB/Mongo_DB.md)
   * [Deploying Mongo DB](week_4/Mongo_DB/deploy_mongo.md)
-  * []()
+* Autoscaling:
+  * [Autoscaling general notes](/week_4/AutoScaling/scaling.md)
+  * [ASGs in AWS](/week_4/AutoScaling/ASG_.md)
+* Monitoring:
+  * [monitoring general Notes](week_4/Monitoring/monitoring.md)
+  * [Setting up an alarm in AWS](week_4/Monitoring/alarms.md)
+  * [Preformamce testing with apache bench](week_4/Monitoring/preformance_testing.md)
 
 ### Scripts
 * [Provision nginx](week_2/Linux/scripts/install-prov-nginx.sh)
