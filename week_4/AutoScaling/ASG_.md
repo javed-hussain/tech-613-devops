@@ -78,3 +78,6 @@ Under Automatic scaling:
 
 ### CLean up
 - terminate ASG - then load balancer - then target group
+
+
+## High availability and scalability

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# mongod on port 27017
 
 sudo apt update -y
 sudo apt upgrade -y
@@ -31,3 +31,4 @@ cd ~
 
 sudo systemctl enable --now mongod
 
+#sudo systemctl status mongod

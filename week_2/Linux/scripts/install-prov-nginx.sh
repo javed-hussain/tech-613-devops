@@ -2,6 +2,7 @@
 #Every bash script needs a `shebang` (#! for bash) this tells unix like systems which interpreter to use
 #nNGINX is a background service (daemon) on your Linux system 
 #that runs a high‑performance web server and often also acts as a reverse proxy, load balancer, and cache.
+# When nginx is installed it auto starts and auto starts on boootup
 
 #!/bin/bash
 

@@ -41,6 +41,7 @@ if [ -f nodejs20-sparta-tictactoe-v1.zip ]; then
     chown -R ubuntu:ubuntu "$APP_DIR"
 
     if [ -n "${MONGODB_URI:-}" ]; then
+    
         sudo -u ubuntu \
             MONGODB_URI="$MONGODB_URI" \
             npm install
