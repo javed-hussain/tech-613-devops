@@ -40,29 +40,13 @@ if [ -f nodejs20-sparta-tictactoe-v1.zip ]; then
     # Give the ubuntu user ownership of the cloned and unzipped app.
     chown -R ubuntu:ubuntu "$APP_DIR"
 
-    if [ -n "${MONGODB_URI:-}" ]; then
-    
-        sudo -u ubuntu \
-            MONGODB_URI="$MONGODB_URI" \
-            npm install
-    else
-        sudo -u ubuntu npm install
-    fi
+    sudo -u ubuntu npm install
 
     # Remove any existing tictactoe PM2 process so re-runs do not
     sudo -u ubuntu pm2 delete tictactoe || true
 
-    # Start the Node.js application and name the PM2 process tictactoe.
-    # Pass MONGODB_URI to the running app as well, so the website can
-    # connect to MongoDB at runtime, not just during seeding.
-    if [ -n "${MONGODB_URI:-}" ]; then
-        sudo -u ubuntu \
-            MONGODB_URI="$MONGODB_URI" \
-            pm2 start index.js --name tictactoe
-    else
-        sudo -u ubuntu \
-            pm2 start index.js --name tictactoe
-    fi
+    pm2 start index.js --name tictactoe
+
 
     # Configure PM2 to start automatically when the EC2 instance boots.
     # This must run as root because it creates and enables a systemd service.

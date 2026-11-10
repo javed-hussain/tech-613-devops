@@ -9,6 +9,7 @@ systemctl start pm2-ubuntu.service
 sudo -iu ubuntu bash <<'EOF'
 set -eu
 
+#db Ip address hard coded in
 cd /home/ubuntu/tictactoe-deploy/app
 export MONGODB_URI='mongodb://172.31.54.0:27017/tictactoe'
 
