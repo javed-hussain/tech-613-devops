@@ -29,6 +29,7 @@
 |`cat filename \| grep word` |searches for and returns instances of word in filename|
 |`command 1 && command 2`|means and then, only if prev xommand success|
 | `command 1 \|\| command 2` | only run if prev command failed |
+| uname -a | gets the current version of linux |
 
 
 ## Sudo
