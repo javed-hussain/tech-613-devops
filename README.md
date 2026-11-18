@@ -1,38 +1,121 @@
-# tech-613-devops
+# Tech 613 DevOps learning notes
 
-### Training for Sparta Global DevOps pathway
+Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pathway. Use this page as a contents list for the material in this repository.
 
-### Week 2:
-* [Git](week_2/git/gitNotes.md)
-* [Markdown](week_2/Markdown/markdown_notes.md)
-* [Virtual Machines](week_2/VirtualMachine/vm_notes.md)
-* Linux:
-  * [Linux Introduction](week_2/Linux/notes/linux.md)
-  * [Basic Linux commands](week_2/Linux/notes/basic_commands.md)
-  * [File ownership and permission notes](week_2/Linux/notes/file_ownership_and_permission_Notes.md)
-  * [Streams](week_2/Linux/notes/streams.md)
-  * [Processes](week_2/Linux/notes/processes.md)
+## Contents
 
-### Week 3
+- [Week 2: Linux, Git, Markdown, and virtual machines](#week-2-linux-git-markdown-and-virtual-machines)
+- [Week 3: DevOps, operating systems, and Python](#week-3-devops-operating-systems-and-python)
+- [Week 4: Cloud apps, MongoDB, and autoscaling](#week-4-cloud-apps-mongodb-and-autoscaling)
+- [Week 5: AWS networking, storage, and monitoring](#week-5-aws-networking-storage-and-monitoring)
+- [Week 6: Infrastructure as Code](#week-6-infrastructure-as-code)
+- [Week 7: Jenkins and CI/CD](#week-7-jenkins-and-cicd)
+- [Week 8: Docker](#week-8-docker)
+- [AI fundamentals](#ai-fundamentals)
+- [Scripts and supporting resources](#scripts-and-supporting-resources)
 
+## Week 2: Linux, Git, Markdown, and virtual machines
 
-### Week 4
-* [cloud concepts](week_4/cloud_app/cloud_concepts.md)
-* [Deploying app to cloud](week_4/cloud_app/deploying_app_aws.md)
-* [proxies](week_4/cloud_app/proxies.md)
-* [app architectures](week_4/cloud_app/app_architectures.md)
-* MongoDB
-  * [MongoDB theory](week_4/Mongo_DB/Mongo_DB.md)
-  * [Deploying Mongo DB](week_4/Mongo_DB/deploy_mongo.md)
-* Autoscaling:
-  * [Autoscaling general notes](/week_4/AutoScaling/scaling.md)
-  * [ASGs in AWS](/week_4/AutoScaling/ASG_.md)
-* Monitoring:
-  * [monitoring general Notes](week_4/Monitoring/monitoring.md)
-  * [Setting up an alarm in AWS](week_4/Monitoring/alarms.md)
-  * [Preformamce testing with apache bench](week_4/Monitoring/preformance_testing.md)
+- [Git notes](week_2/git/gitNotes.md)
+- [Markdown notes](week_2/Markdown/markdown_notes.md)
+- [Virtual machine notes](week_2/VirtualMachine/vm_notes.md)
+- Linux
+  - [Linux introduction](week_2/Linux/notes/linux.md)
+  - [Basic commands](week_2/Linux/notes/basic_commands.md)
+  - [File ownership and permissions](week_2/Linux/notes/file_ownership_and_permission_Notes.md)
+  - [Streams](week_2/Linux/notes/streams.md)
+  - [Processes](week_2/Linux/notes/processes.md)
 
-### Scripts
-* [Provision nginx](week_2/Linux/scripts/install-prov-nginx.sh)
-* [deploy node app](week_4/cloud_app/prov_app.sh)
-* [Deploy MongoDB](week_4/Mongo_DB/deploy_db.sh)
+## Week 3: DevOps, operating systems, and Python
+
+- [DevOps overview](Week_3/DevOps.md)
+- [Operating system interfaces](Week_3/OS_Interfaces.md)
+- Python
+  - [Collections and functions](Week_3/python/Day_1/collections_functions.md)
+  - Paths and files
+    - [Path and file notes](Week_3/python/Day_3/Path_Shutil.md/paths_files.md)
+    - [Path and file commands](Week_3/python/Day_3/Path_Shutil.md/commands.md)
+  - [Argument parsing notes](Week_3/python/Day_3/argparse/argparse_notes.md)
+  - [Argument parsing commands](Week_3/python/Day_3/argparse/commands.md)
+  - Processes
+    - [Subprocess notes](Week_3/python/Day_3/commands_processes/subprocess_notes.md)
+    - [Process commands](Week_3/python/Day_3/commands_processes/commands.md)
+  - [Logging notes](Week_3/python/Day_3/logging/logging.md)
+  - [Logging commands](Week_3/python/Day_3/logging/commands.md)
+  - [Sockets notes](Week_3/python/Day_3/sockets/sockets_notes.md)
+  - [Socket commands](Week_3/python/Day_3/sockets/commands.md)
+  - [Environment variables, configuration, and secrets](Week_3/python/Day_4/Envirovars_configs_secrets/environment_variables_notes.md)
+  - [Environment variable commands](Week_3/python/Day_4/Envirovars_configs_secrets/commands.md)
+
+## Week 4: Cloud apps, MongoDB, and autoscaling
+
+- Cloud applications
+  - [Cloud concepts](week_4/cloud_app/cloud_concepts.md)
+  - [Application architectures](week_4/cloud_app/app_architectures.md)
+  - [Proxies](week_4/cloud_app/proxies.md)
+  - [Deploying an application to AWS](week_4/cloud_app/deploying_app_aws.md)
+- MongoDB
+  - [MongoDB notes](week_4/Mongo_DB/Mongo_DB.md)
+  - [Deploying MongoDB](week_4/Mongo_DB/deploy_mongo.md)
+- Autoscaling
+  - [Scaling notes](week_4/AutoScaling/scaling.md)
+  - [AWS Auto Scaling Groups](week_4/AutoScaling/ASG_.md)
+
+## Week 5: AWS networking, storage, and monitoring
+
+- VPC
+  - [VPC notes](Week_5/VPC/VPC.md)
+  - [Custom VPC configuration](Week_5/VPC/customVPCconfig.md)
+- [S3 notes](Week_5/S3/S3.md)
+- Monitoring
+  - [Monitoring overview](Week_5/Monitoring/monitoring.md)
+  - [Alarms](Week_5/Monitoring/alarms.md)
+  - [Performance testing](Week_5/Monitoring/preformance_testing.md)
+
+## Week 6: Infrastructure as Code
+
+- [Infrastructure as Code notes](Week_6/Notes/IaaC_Notes.md)
+- [Terraform introduction](Week_6/Notes/terraform_intro.md)
+- [How Terraform works](Week_6/Notes/how_does_terraform_work_notes.md)
+- [Terraform code notes](Week_6/Notes/terraform_code.md)
+- [Ansible introduction](Week_6/Notes/Intro_to_ansible.md)
+
+## Week 7: Jenkins and CI/CD
+
+- [CI/CD and Jenkins introduction](Week_7/Intro_CICD_Jenkins.md)
+- [SSH key pairs](Week_7/SSH-key_pair.md)
+- Jenkins jobs
+  - [Job 1](Week_7/jenkins_job1.md)
+  - [Job 2](Week_7/jenkins_job2.md)
+  - [Job 3](Week_7/jenkins_job3.md)
+
+## Week 8: Docker
+
+- [Docker introduction](Week_8/Introduction_to_Docker.md)
+- [Docker commands](Week_8/Docker_Commands.md)
+- [Dockerfiles](Week_8/Dockerfiles.md)
+- [Docker Compose](Week_8/Docker_compose.md)
+- [Containerising the Tic Tac Toe app](Week_8/ttt_container.md)
+
+## AI fundamentals
+
+- [Session 1](AI_fundamentals/session_1.md)
+- [Session 2](AI_fundamentals/session_2.md)
+
+## Scripts and supporting resources
+
+- Provisioning and deployment scripts
+  - [Install and provision Nginx](week_2/Linux/scripts/install-prov-nginx.sh)
+  - [Provision the cloud app](week_4/cloud_app/prov_app.sh)
+  - [Deploy MongoDB](week_4/Mongo_DB/deploy_db.sh)
+  - [MongoDB and Auto Scaling user data](week_4/AutoScaling/user-data-mgdb-asg.sh)
+- S3 scripts
+  - [Create a bucket](Week_5/S3/boto2_scripts/create_bucket.py)
+  - [List buckets](Week_5/S3/boto2_scripts/load_buckets.py)
+  - [List bucket objects](Week_5/S3/boto2_scripts/list_bucket_objects.py)
+  - [Upload a file](Week_5/S3/boto2_scripts/upload_file.py)
+  - [Download a file](Week_5/S3/boto2_scripts/download_file.py)
+  - [Delete a file](Week_5/S3/boto2_scripts/delete_file.py)
+  - [Delete a bucket](Week_5/S3/boto2_scripts/delete_bucket.py)
+- [Git collaboration workflow (PDF)](Images/Git%20Collab%20Recommended%20Workflow.pdf)
+- [Images and diagrams](Images/)
