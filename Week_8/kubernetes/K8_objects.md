@@ -2,6 +2,9 @@
 
 Kubernetes uses **objects** to describe the desired state of applications and cluster resources.
 
+Resource (type): a kind of thing the Kubernetes API offers, such as pods, deployments, services, persistentvolumes. It's the category.
+
+Object: a specific instance of a resource that exists in your cluster, such as the Deployment named mongo or the PV named mongo-pv. It's the thing you create with YAML.
 You usually define objects in YAML files and apply them with:
 
 ```bash

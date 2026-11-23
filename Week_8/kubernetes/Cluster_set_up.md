@@ -1,6 +1,8 @@
 ## Cluster Setup
 
-A Kubernetes **cluster** is a group of machines that work together to run containerised applications.
+A cluster is the whole Kubernetes system: a set of machines (nodes) that run your containers, plus the control plane that manages them.
+
+A namespace is a named section inside a cluster that groups and separates resources. Think of the cluster as a building and namespaces as separate rooms. Names only have to be unique within a namespace, so two teams can each have a mongo Service without clashing.
 
 ```text
 Kubernetes Cluster
