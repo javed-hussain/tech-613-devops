@@ -1,0 +1,56 @@
+
+# This file creates a Kubernetes Deployment called "nginx-deployment".
+
+# Specifies the Kubernetes API group and version used to create this object.
+# "apps/v1" is the stable API version used for Deployments.
+apiVersion: apps/v1
+
+# kind: Deployment
+# Tells Kubernetes what type of object we are creating.
+kind: Deployment
+
+# metadata:
+# Contains information used to identify the Kubernetes object.
+metadata:
+  # Gives the Deployment a unique name within its namespace.
+  name: nginx-deployment
+
+# spec:
+# Defines the desired state of the Deployment.
+# Kubernetes continuously compares the actual state with this desired state
+# and makes changes if necessary.
+spec:
+  # selector:
+  # Tells the Deployment which Pods it should manage.
+  selector:
+    # matchLabels:
+    # Matches Pods that have the label "app: nginx".
+    # This selector must match the labels defined in the Pod template below.
+    matchLabels:
+      app: nginx
+
+  # replicas: 3
+  # Tells Kubernetes to keep 3 identical Pods running.
+  replicas: 5
+
+  # This is the blueprint/template used to create each Pod.
+  # Every Pod created by this Deployment will use the configuration below.
+  template:
+    metadata:
+      # Adds a label to each Pod created from this template.
+      labels:
+        app: nginx
+    # spec:
+    # Defines what should run inside each Pod.
+    spec:
+      # A list of containers to run inside each Pod.
+      containers:
+        # Gives the container a name within the Pod.
+        - name: nginx
+          # Specifies the Docker image that Kubernetes should pull and run.
+          image: daraymonsta/nginx-257:dreamteam
+
+          # ports:
+          # Declares the port that the container listens on.
+          ports:
+            - containerPort: 80

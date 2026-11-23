@@ -16,6 +16,7 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 2: Linux, Git, Markdown, and virtual machines
 
+- [Week 2 cheatsheet](Cheatsheets/week-2.md)
 - [Git notes](week_2/git/gitNotes.md)
 - [Markdown notes](week_2/Markdown/markdown_notes.md)
 - [Virtual machine notes](week_2/VirtualMachine/vm_notes.md)
@@ -28,6 +29,7 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 3: DevOps, operating systems, and Python
 
+- [Week 3 cheatsheet](Cheatsheets/week-3.md)
 - [DevOps overview](Week_3/DevOps.md)
 - [Operating system interfaces](Week_3/OS_Interfaces.md)
 - Python
@@ -49,6 +51,7 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 4: Cloud apps, MongoDB, and autoscaling
 
+- [Week 4 cheatsheet](Cheatsheets/week-4.md)
 - Cloud applications
   - [Cloud concepts](week_4/cloud_app/cloud_concepts.md)
   - [Application architectures](week_4/cloud_app/app_architectures.md)
@@ -63,6 +66,7 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 5: AWS networking, storage, and monitoring
 
+- [Week 5 cheatsheet](Cheatsheets/week-5.md)
 - VPC
   - [VPC notes](Week_5/VPC/VPC.md)
   - [Custom VPC configuration](Week_5/VPC/customVPCconfig.md)
@@ -74,6 +78,7 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 6: Infrastructure as Code
 
+- [Week 6 cheatsheet](Cheatsheets/week-6.md)
 - [Infrastructure as Code notes](Week_6/Notes/IaaC_Notes.md)
 - [Terraform introduction](Week_6/Notes/terraform_intro.md)
 - [How Terraform works](Week_6/Notes/how_does_terraform_work_notes.md)
@@ -82,6 +87,7 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 7: Jenkins and CI/CD
 
+- [Week 7 cheatsheet](Cheatsheets/week-7.md)
 - [CI/CD and Jenkins introduction](Week_7/Intro_CICD_Jenkins.md)
 - [SSH key pairs](Week_7/SSH-key_pair.md)
 - Jenkins jobs
@@ -91,11 +97,18 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 
 ## Week 8: Docker
 
-- [Docker introduction](Week_8/Introduction_to_Docker.md)
-- [Docker commands](Week_8/Docker_Commands.md)
-- [Dockerfiles](Week_8/Dockerfiles.md)
-- [Docker Compose](Week_8/Docker_compose.md)
-- [Containerising the Tic Tac Toe app](Week_8/ttt_container.md)
+- [Week 8 cheatsheet](Cheatsheets/week-8.md)
+- Docker
+  - [Docker introduction](Week_8/docker/Introduction_to_Docker.md)
+  - [Docker commands](Week_8/docker/Docker_Commands.md)
+  - [Dockerfiles](Week_8/docker/Dockerfiles.md)
+  - [Docker Compose](Week_8/docker/Docker_compose.md)
+  - [Containerising the Tic Tac Toe app](Week_8/docker/ttt_container.md)
+- Kubernetes
+  - [Kubernetes overview](Week_8/kubernetes/kubernetes-notes.md)
+  - [Kubernetes objects](Week_8/kubernetes/K8_objects.md)
+  - [Cluster setup](Week_8/kubernetes/Cluster_set_up.md)
+  - [Container security](Week_8/kubernetes/security_concerns_containers.md)
 
 ## AI fundamentals
 

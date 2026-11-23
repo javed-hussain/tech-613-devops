@@ -1,0 +1,16 @@
+# This Service sends traffic to Pods labelled app: nginx.
+# Traffic can reach it on port 80 inside the cluster or on <node-ip>:30001.
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc
+  namespace: default
+spec:
+  type: NodePort  # Exposes the Service on a port on each node
+  ports:
+    - nodePort: 30001  # Port on each node (default range: 30000–32767)
+      port: 80        # Port clients use to reach the Service inside the cluster
+      targetPort: 80  # Port the Service forwards traffic to on each Pod
+  selector:
+    app: nginx  # Matches labels on the Pods, not on the Deployment itself

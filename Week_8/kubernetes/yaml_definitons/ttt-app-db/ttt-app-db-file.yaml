@@ -1,0 +1,74 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ttt-deployment
+spec:
+  selector:
+    matchLabels:
+      app: ttt
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: ttt
+    spec:
+      containers:
+        - name: ttt
+          image: javs1204/tttapp:v1
+          ports:
+            - containerPort: 3000
+          env:
+            - name: MONGODB_URI
+              value: mongodb://mongo:27017/tictactoe
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: ttt-svc
+  namespace: default
+spec:
+  type: NodePort  # Exposes the Service on a port on each node
+  ports:
+    - nodePort: 30002  # Port on each node (default range: 30000–32767)
+      port: 80        # Port clients use to reach the Service inside the cluster
+      targetPort: 3000  # Port the Service forwards traffic to on each Pod
+  selector:
+    app: ttt  # Matches labels on the Pods, not on the Deployment itself
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo
+spec:
+  type: ClusterIP
+  selector:
+    app: mongo
+  ports:
+    - port: 27017
+      targetPort: 27017
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo
+  template:
+    metadata:
+      labels:
+        app: mongo
+    spec:
+      containers:
+        - name: mongo
+          image: mongo:8.0
+          ports:
+            - containerPort: 27017

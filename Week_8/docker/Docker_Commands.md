@@ -9,7 +9,7 @@ docker run -d --name web -p 8080:80 nginx
 - `docker run`: Creates and starts a new container from an image.
 - `-d`: Detached mode — runs in the background.
 - `--name web`: Names the container `web`.
-- `-p 8080:80`: Maps host port `8080` to container port `80`.
+- `-p 8080:80`: Maps host port `8080` to container port `80`. left side exposes port on the machine, right side is port exposed inside the container
 - `nginx`: Image to use; downloaded automatically if needed.
 - Visit `http://localhost:8080` to access the web server.
 
