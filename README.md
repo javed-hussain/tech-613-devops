@@ -107,7 +107,9 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 - Kubernetes
   - [Kubernetes overview](Week_8/kubernetes/kubernetes-notes.md)
   - [Kubernetes objects](Week_8/kubernetes/K8_objects.md)
+  - [Kubernetes commands](Week_8/kubernetes/K8_commands.md)
   - [Cluster setup](Week_8/kubernetes/Cluster_set_up.md)
+  - [Kubernetes scaling](Week_8/kubernetes/K8_scaling.md)
   - [Container security](Week_8/kubernetes/security_concerns_containers.md)
 
 ## AI fundamentals
