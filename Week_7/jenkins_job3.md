@@ -32,10 +32,14 @@
 ## Add the Deployment Script
 - Build Steps → Add build step → Execute shell.
 - Enter:
-    - set -e
-    - rsync -rlvz --exclude node_modules --exclude .git -e "ssh -o StrictHostKeyChecking=accept-new" ./app/ ubuntu@54.220.242.42:/home/ubuntu/tech613-tictactoe-node-app/app/
-    - ssh -o StrictHostKeyChecking=accept-new ubuntu@54.220.242.42 'cd /home/ubuntu/tech613-tictactoe-node-app/app && npm ci && pm2 restart YOUR_APP_NAME'
+- 
+```bash
+set -e
 
+rsync -rlvz --exclude node_modules --exclude .git -e "ssh -o StrictHostKeyChecking=accept-new" ./app/ ubuntu@54.220.242.42:/home/ubuntu/tech613-tictactoe-node-app/app/
+
+ssh -o StrictHostKeyChecking=accept-new ubuntu@54.220.242.42 'cd /home/ubuntu/tech613-tictactoe-node-app/app && npm ci && pm2 restart YOUR_APP_NAME'
+```
 
 ## What Each Command Does
 - set -e:
@@ -63,3 +67,16 @@
 
 ## Pipeline
 Push to dev → Test → Merge → Checkout main on Jenkins → Rsync to EC2 → Restart PM2
+
+# Final Results:
+
+- In the app edited the CSS style of the main app background so the color is light green
+- Commit and pushes those changes
+- Changes where merged into main and deployed onto an EC2 instance
+
+![](../Images/after.png)
+---
+
+
+
+[← Week 7 contents](./README.md) · [Next: SSH key setup →](./SSH-key_pair.md)

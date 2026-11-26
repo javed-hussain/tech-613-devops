@@ -54,4 +54,8 @@ Expected message:
 1. Git connects to GitHub over SSH.
 2. SSH asks the agent to sign authentication data.
 3. The agent signs using your private key.
-4. GitHub verifies the
+4. GitHub verifies the signature using the public key.
+
+---
+
+[← Week 7 contents](./README.md)

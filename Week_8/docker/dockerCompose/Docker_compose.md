@@ -2,37 +2,28 @@
 
 ## What is Docker Compose?
 
-Docker Compose is a tool for running **multiple Docker containers together** using one YAML file.
-
-Instead of running each container separately with `docker run`, you define all of your services in a `docker-compose.yaml` file and start them with one command:
-
-`docker compose up -d`
+- Docker Compose is a tool for running **multiple Docker containers together** using one YAML file.
+- Instead of running each container separately with `docker run`, you define all of your services in a `docker-compose.yaml` file and start them with one command:
+  - `docker compose up -d`
 
 For the TTT app, you need:
-
 - A MongoDB container
 - A TTT app container
 
-Docker Compose also creates a shared internal network. This means the app can connect to Mongo using the service name `mongo`, rather than an IP address.
+Docker Compose also creates a shared internal network. 
+- This means the app can connect to Mongo using the service name `mongo`, rather than an IP address.
 
 ## What is a service?
-
-A service is one part of your application that Docker Compose runs as a container.
-
-In this project:
-
-- `mongo` is the database service.
-- `app` is the web application service.
-
-A service is the definition in the Compose file. A container is the running instance created from that definition.
+- A service is one part of your application that Docker Compose runs as a container.
+- In this project:
+  - `mongo` is the database service.
+  - `app` is the web application service.
+- A service is the definition in the Compose file. A container is the running instance created from that definition.
 
 ## What is a volume?
-
-A volume is storage managed by Docker that exists outside the container.
-
-Containers are temporary. If you delete a Mongo container, its database data would normally be deleted too.
-
-A volume keeps the MongoDB data safe even if the container stops, is removed, or is recreated.
+- A volume is storage managed by Docker that exists outside the container.
+- Containers are temporary. If you delete a Mongo container, its database data would normally be deleted too.
+- A volume keeps the MongoDB data safe even if the container stops, is removed, or is recreated.
 
 ## How it works
 
@@ -44,8 +35,6 @@ A volume keeps the MongoDB data safe even if the container stops, is removed, or
 6. Stop them all with `docker compose down`.
 
 ## The Compose file
-
-Create this file:
 
 `docker-compose.yaml`
 
@@ -102,21 +91,11 @@ The `app` service runs your TTT Node.js application using the image you pushed t
 
 ### Why `user: root` is needed
 
-Your app image runs as the `node` user, but the files in `/app` were created as `root` when the image was built.
-
-`npm ci` needs to change files inside `/app/node_modules`, but the `node` user does not have permission to do that.
-
-This causes the error:
-
-`EACCES: permission denied`
-
-Running the container as `root` gives it permission to install dependencies and seed the database.
-
-The command does this in order:
-
-1. `npm ci --omit=dev` installs dependencies.
-2. The app’s `postinstall` script runs and seeds MongoDB because `MONGODB_URI` is set.
-3. `node index.js` starts the TTT app.
+- Your app image runs as the `node` user, but the files in `/app` were created as `root` when the image was built.
+- `npm ci` needs to change files inside `/app/node_modules`, but the `node` user does not have permission to do that.
+- This causes the error:
+  - `EACCES: permission denied`
+- Running the container as `root` gives it permission to install dependencies and seed the database.
 
 ### `volumes`
 
@@ -124,44 +103,17 @@ The command does this in order:
 volumes:
   mongo-data:
 ```
-
-This declares the named volume called `mongo-data`.
-
-The Mongo service uses it at `/data/db`, so the database data survives container restarts.
+- This declares the named volume called `mongo-data`.
+- The Mongo service uses it at `/data/db`, so the database data survives container restarts.
 
 ## Run the Compose file
 
-Start both services:
-
-`docker compose up -d`
-
-Check they are running:
-
-`docker compose ps`
-
-You should see:
-
-| Service | State |
-|---|---|
-| `mongo` | Running |
-| `app` | Running |
-
-## Check the app
-
-Open:
-
-`http://localhost:3001`
-
-Check the app logs:
-
-`docker compose logs app`
-
-## Stop the services
-
-Stop the containers but keep the database data:
-
-`docker compose down`
-
-Stop the containers and delete the database data:
-
-`docker compose down -v`
+- Start both services:
+  - `docker compose up -d`
+- Check they are running:
+  - `docker compose ps`
+- Check the app: Open: `http://localhost:3001`
+- Check the app logs: `docker compose logs app`
+- Stop the services:
+  - Stop the containers but keep the database data: `docker compose down`
+  - Stop the containers and delete the database data: `docker compose down -v`

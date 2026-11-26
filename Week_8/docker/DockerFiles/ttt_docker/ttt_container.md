@@ -34,7 +34,7 @@ EXPOSE 3000
 CMD ["node", "index.js"]
 ```
 
-- `FROM node:20-alpine` uses a stable, small Node.js base image.
+- `FROM node:20-alpine` uses a stable, small Node.js base image - version 20 is app specific.
 - `WORKDIR /app` sets `/app` as the working folder inside the container.
 - `COPY app/ .` copies all files from your local `app` folder into `/app` in the container.
 - `RUN npm ci --omit=dev` installs production dependencies and skips development dependencies.

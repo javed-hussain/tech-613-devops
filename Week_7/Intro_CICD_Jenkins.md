@@ -113,7 +113,7 @@ Jenkins receives notification
         v
 Build and test --> Merge to main --> Deploy to AWS
 
-![cicd pipeline](/tech-613-devops/Images/cicdpipeline.png)
+![cicd pipeline](../Images/cicdpipeline.png)
 
 ## 9. What is a Webhook?
 
@@ -154,3 +154,6 @@ Deploy the same code that was tested by Jenkins. Don’t clone the repository ag
 - The video mentions `scp` or `rsync` over SSH for copying files.
 
 
+---
+
+[← Week 7 contents](./README.md) · [Next: Job 1 — Build and test →](./jenkins_job1.md)

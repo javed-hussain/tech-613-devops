@@ -85,9 +85,7 @@ to the MongoDB Pod.
 ## ClusterIP vs Node IP
 
 - **ClusterIP:** An internal IP assigned to a Kubernetes Service. It gives Pods a stable way to communicate—for example, the TTT app reaches MongoDB through `mongo:27017`.
-
 - **Node IP:** The IP address of a machine running Kubernetes. It identifies the machine, not a specific application.
-
 - **NodePort:** A Service type that exposes an app through a node’s IP and a port—for example, `http://<Node-IP>:30002` reaches the TTT app.
 
 ## Deploy and Check

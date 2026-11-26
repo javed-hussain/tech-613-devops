@@ -101,9 +101,12 @@ Training notes, examples, and scripts from the Sparta Global Tech 613 DevOps pat
 - Docker
   - [Docker introduction](Week_8/docker/Introduction_to_Docker.md)
   - [Docker commands](Week_8/docker/Docker_Commands.md)
-  - [Dockerfiles](Week_8/docker/Dockerfiles.md)
-  - [Docker Compose](Week_8/docker/Docker_compose.md)
-  - [Containerising the Tic Tac Toe app](Week_8/docker/ttt_container.md)
+  - [Custom Docker images](Week_8/docker/Custom_Images.md)
+  - [Dockerfiles](Week_8/docker/DockerFiles/Dockerfiles.md)
+  - [Nginx Dockerfile example](Week_8/docker/DockerFiles/nginx/notes.md)
+  - [Docker Compose](Week_8/docker/dockerCompose/Docker_compose.md)
+  - [Two-tier app Compose file](Week_8/docker/dockerCompose/2_tier_app/docker-compose.yaml)
+  - [Containerising the Tic Tac Toe app](Week_8/docker/DockerFiles/ttt_docker/ttt_container.md)
 - Kubernetes
   - [Kubernetes overview](Week_8/kubernetes/kubernetes-notes.md)
   - [Kubernetes objects](Week_8/kubernetes/K8_objects.md)

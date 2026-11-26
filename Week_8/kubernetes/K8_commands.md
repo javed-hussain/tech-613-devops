@@ -1,7 +1,7 @@
 | Command                                    | Purpose                                                                     |
 | ------------------------------------------ | --------------------------------------------------------------------------- |
 | kubectl create -f file.yaml                | Create resources from a YAML file                                           |
-| kubectl apply -f file.yaml                 | Create or update resources from a YAML file                                 |
+| kubectl apply -f file.yaml                 | Create or update resources from a YAML file                 cd Ww                |
 | kubectl delete -f file.yaml                | Delete resources defined in a YAML file                                     |
 | kubectl get all                            | List common resources, such as Pods, Deployments, ReplicaSets, and Services |
 | kubectl get pods                           | List all Pods                                                               |

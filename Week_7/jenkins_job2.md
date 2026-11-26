@@ -80,12 +80,15 @@
 ## 3. Add the Shell Commands
 - Build Steps → Add build step → Execute shell.
 - Enter:
-    - set -e
-    - git fetch origin
-    - git switch main
-    - git pull origin main
-    - git merge origin/dev
-    - git push origin main
+
+```bash
+set -e
+git fetch origin
+git switch main
+git pull origin main
+git merge origin/dev
+git push origin main
+```
 
 ### What the Commands Do
 - set -e: stops the script if a command fails.
@@ -104,7 +107,7 @@
 
 ## 6. Optional Merge Safeguard
 - To stop rather than create a merge commit when branches have diverged, replace the merge command with:
-    - git merge --ff-only origin/dev
+    - `git merge --ff-only origin/dev`
 
 ## Troubleshooting
 - Permission denied (publickey) during shell commands:
@@ -121,3 +124,7 @@
 - These basic configurations can retrieve a newer dev revision if another push arrives between jobs.
 - For a stronger pipeline, pass the exact tested commit from Job 1 to Job 2.
 - A newly created merge result may also need testing before deployment.
+
+---
+
+[← Week 7 contents](./README.md) | [Next: Job 3 — CD deploy →](./jenkins_job3.md)

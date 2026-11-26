@@ -59,10 +59,12 @@
 - Under Build Steps, select Add build step → Execute shell.
 - Enter the app’s dependency-installation and test commands.
 - For an npm app with a package-lock.json and test script, an example is:
-    - set -e
-    - cd app
-    - npm ci
-    - npm test
+```bash
+set -e
+cd app
+npm ci
+npm test
+```
 - Click Save → Build Now.
 - Open the build number → Console Output.
 - Confirm the output ends with:
@@ -95,4 +97,8 @@
 - Only trigger each job when the previous job succeeds.
 - Do not independently clone the latest branch during deployment.
 
-> Exact settings for these jobs still depend on the course’s artifact-transfer method, app commands and EC2 restart method.
+
+
+---
+
+[← Week 7 contents](./README.md) · [Next: Job 2 — CI merge →](./jenkins_job2.md)

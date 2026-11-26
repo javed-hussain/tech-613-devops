@@ -1,0 +1,23 @@
+services:
+  mongo:
+    image: mongo:8
+    container_name: ttt-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  app:
+    image: javs1204/tttapp:v1
+    container_name: ttt-app
+    ports:
+      - "3001:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/tictactoe
+    depends_on:
+      - mongo
+    user: root
+    command: sh -c "npm ci --omit=dev && node index.js"
+
+volumes:
+  mongo-data:
